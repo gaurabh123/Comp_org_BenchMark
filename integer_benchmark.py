@@ -20,5 +20,14 @@ def integer_bench():
     completion_time = time.time()
     accumulated_time += completion_time - beginnig_time
 
+    # Perform 5 * 10^9 multiplications of integer constants
+    beginnig_time = time.time()
+    for _ in range(100000):
+        for _ in range(50000):
+            calculation_result = test_value * test_value
+    completion_time = time.time()
+    accumulated_time +=    completion_time - beginnig_time
+
     
+
 
